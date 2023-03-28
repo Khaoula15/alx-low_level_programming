@@ -2,18 +2,21 @@
 
 /**
  * puts2 - print strings
- * @str: function parameter
+ * @str: the used string reference
  * Return: 0
  */
 
 void puts2(char *str)
 {
-	int i;
+	int Z = 0;
 
-	for (i = 0 ; str[i] != '\0' ; i++)
+	while (str[Z] != '\0')
 	{
-		_putchar(str[i]);
-		i++;
+		if (Z % 2 == 0)
+		{
+			_putchar(str[Z]);
+		}
+		Z++;
 	}
 	_putchar('\n');
 }
